@@ -1,0 +1,15 @@
+probot:
+  handler: index.probot
+
+
+  environment:
+    LOG_FORMAT: ${file(config/config.${self:provider.stage}.json):LOG_FORMAT}
+    WEBHOOK_SECRET: secret
+    APP_ID: 17744
+
+
+  events:
+    - http:
+       path: /probot
+       method: post
+
