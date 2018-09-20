@@ -6,7 +6,7 @@ provider:
   region: us-east-1
 
 functions:
-  probot:
+  router:
     handler: index.probot
 
     environment:

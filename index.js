@@ -3,7 +3,7 @@
  * @param {import('probot').Application} app - Probot's Application class.
  */
 
-const serverless = require('@probot/serverless-lambda')
+const { serverless } = require('@probot/serverless-lambda')
 
 const appFn = app => {
   // Your code here
