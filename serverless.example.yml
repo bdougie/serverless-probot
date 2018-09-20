@@ -11,11 +11,12 @@ functions:
 
     environment:
       LOG_FORMAT: json
-      WEBHOOK_SECRET: secret
-      APP_ID: 17744
+      WEBHOOK_SECRET: XXXXXXXXXXXXXXXXXX
+      APP_ID: XXXXXXXXXXXXXXXXXXXXX
 
     events:
       - http:
          path: /probot
          method: post
+
 
